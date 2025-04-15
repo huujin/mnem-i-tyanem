@@ -1,0 +1,33 @@
+.footer {
+    // position: absolute;
+    // bottom: 0;
+    // left: 0;
+    // right: 0;
+    background-color: rgb(34,34,34);
+    font-weight: 750;
+    color: #ecf0f1;
+    padding: 30px 0 10px;
+}
+.footer_container {
+    max-width: 40%;
+    margin: 0 auto;
+    padding: 0 20px;
+    justify-content: space-between;
+}
+.footer_menu {
+    
+}
+.footer_list {
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    gap: 2em;
+}
+.footer_item {
+}
+.footer_under {
+    display: flex;
+    justify-content: center;
+    padding: 40px 40px;
+    opacity: 0.8;
+}

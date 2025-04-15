@@ -1,0 +1,76 @@
+.massage {
+   
+}
+.massage_container {
+    padding-left: auto;
+    position: relative;
+    max-width: 40%;
+    left: 30%;
+}
+
+.massage_time, .massage_name, .massage_price {
+    font-weight: 750;
+}
+
+.massage_img {
+    background-image: url("/img/services.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 70vh;
+
+    display: grid;
+    place-items: center;
+    color: white;
+    font-size: 30px;
+    font-weight: 750;
+}
+
+.massage_assist {
+    
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.body_massage_title {
+    padding: 1em 0;
+    text-align: center;
+    font-size: 38px;
+    font-weight: 800;
+}
+
+.body_massage_cases {
+    width: 100%;
+    display: flex;
+}
+.body_massage {
+    width: 100%;
+    margin-bottom: 2em;
+}
+
+.massage_items {
+    margin-top: 1em;
+    min-width: 50%;
+    max-width: 100%;
+    text-align: left;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.2em;
+    padding: 0.8em;
+    border-bottom: solid 0.5px grey;
+}
+
+.face_massage {
+    background-color: rgb(187,188,182);
+    padding-top: 90px;
+    padding-bottom: 135px;
+}
+
+.face_massage_container {
+    position: relative;
+    max-width: 60%;
+    left: 20%;
+    
+}

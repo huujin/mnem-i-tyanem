@@ -1,0 +1,15 @@
+.header-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0);
+    color: #fff;
+    position: absolute;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+}
