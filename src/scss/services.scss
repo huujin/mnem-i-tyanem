@@ -1,15 +1,40 @@
 .massage {
    
 }
+
+@font-face {
+    font-family: 'Graphik';
+    src: url("/fonts/Graphik-Medium-Trial.woff") format('opentype');
+    
+  }
 .massage_container {
+    margin-top: 5em;
+    margin-bottom: 3em;
     padding-left: auto;
     position: relative;
     max-width: 40%;
     left: 30%;
 }
 
-.massage_time, .massage_name, .massage_price {
-    font-weight: 750;
+.massage_time {
+    font-size: 12px;
+    color: #222222;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    font-family: Graphik;
+}
+.massage_name {
+    font-size: 26px;
+    line-height: 1.17;
+    font-weight: 600;
+    color: #222222;
+}
+.massage_price {
+    font-size: 20px;
+    line-height: 1.35;
+    color: #222222;
+    font-family: Graphik;
+    font-weight: 600;
 }
 
 .massage_img {
@@ -19,12 +44,37 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     min-height: 70vh;
-
+    letter-spacing: .5px;
     display: grid;
     place-items: center;
     color: white;
-    font-size: 30px;
-    font-weight: 750;
+    font-size: 72px;
+    line-height: 1.17;
+    font-weight: 600;
+}
+
+.rounded_btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 6em;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 150px;
+    width: 13%;
+    height: 50px;
+    border-radius: 30px; /* Уровень закругления */
+    padding: 10px 25px;
+    background: #244443; /* Зелёный цвет */
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.rounded_btn:hover {
+    background: #000000;
 }
 
 .massage_assist {
@@ -37,8 +87,9 @@
 .body_massage_title {
     padding: 1em 0;
     text-align: center;
-    font-size: 38px;
-    font-weight: 800;
+    font-size: 42px;
+    line-height: 1.23;
+    font-weight: 600;
 }
 
 .body_massage_cases {
@@ -55,17 +106,17 @@
     min-width: 50%;
     max-width: 100%;
     text-align: left;
-    font-size: 18px;
-    font-weight: 300;
-    line-height: 1.2em;
+    // font-size: 18px;
+    // font-weight: 300;
+    // line-height: 1.2em;
     padding: 0.8em;
     border-bottom: solid 0.5px grey;
 }
 
 .face_massage {
     background-color: rgb(187,188,182);
-    padding-top: 90px;
-    padding-bottom: 135px;
+    padding-top: 20px;
+    padding-bottom: 100px;
 }
 
 .face_massage_container {

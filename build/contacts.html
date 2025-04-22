@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+				content="width=device-width, initial-scale=1.0">
+	<meta name="description"
+				content="Gulp pack for easy html/php markup development">
+	<meta name="keywords"
+				content="">
+	<link rel="shortcut icon"
+				href="img/favicons/favicon.svg"
+				type="image/svg+xml">
+	<link rel="shortcut icon"
+				href="img/favicons/favicon.webp"
+				type="image/webp">
+	<link rel="shortcut icon"
+				href="img/favicons/favicon.png"
+				type="image/x-icon">
+	<link rel="stylesheet"
+				href="css/libs.min.css">
+	<link rel="stylesheet"
+				href="css/style.min.css">
+	<title>Easy-webdev-startpack v3.0</title>
+</head>
+
+
+<body>
+	<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Салон красоты</title>
+    <style>
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #fff;
+            text-decoration: none;
+        }
+        
+        
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 50px;
+        }
+        
+        nav ul li {
+            margin-left: 30px;
+        }
+        
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: 500;
+            font-size: 18px;
+            transition: color 0.3s;
+            position: relative;
+            padding: 5px 0;
+        }
+        
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 24px;
+            cursor: pointer;
+            color: #fff;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header_container">
+            <div class="header-content">               
+                <button class="mobile-menu-btn">☰</button>
+                <nav id="mainNav">
+                    <ul>
+                        <li><a href="/index.html">о нас</a></li>
+                        <li><a href="/services.html">услуги</a></li>
+                        <li><a href="/masters.html">мастера</a></li>
+                        <li><a href="/corporate.html">корпоративным клиентам</a></li>
+                        <li style="opacity: 0.7;"><a href="/contacts.html">контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        
+    </header>
+    
+    <script>
+        // Мобильное меню
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const nav = document.querySelector('nav');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            nav.classList.toggle('active');
+        });
+        
+        // Закрытие меню при клике на ссылку
+        const navLinks = document.querySelectorAll('nav ul li a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                if (nav.classList.contains('active')) {
+                    nav.classList.remove('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+	<main class="main">
+		<body>
+            <div class="contacts_img">
+                <div class="zxc">
+                    <div class="zxc_logo"><img src="img/Group_8.svg" alt=""></div>
+                    Мы — маленькие студии в центре Москвы, где собрались люди с большой любовью к телу. Всё наше внимание направлено на то, чтобы вы здесь получили максимум удовольствия в союзе с максимальной пользой.
+                </div>
+                <!-- <img src="img/Group_8.svg" alt="">
+                Мы — маленькие студии в центре Москвы, где собрались люди с большой любовью к телу. Всё наше внимание направлено на то, чтобы вы здесь получили максимум удовольствия в союзе с максимальной пользой. -->
+            </div>
+            <div class="contacts">
+                <div class="map">       
+                    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A3085814034912079792eba5d936eca67435ba9bd8de47cb8f0ad66dddb03a810&amp;width=100%25&amp;height=720&amp;lang=ru_RU"></script>
+                </div>
+                <div class="contacts_info">
+                    <div class="contacts_title">КАК НАС НАЙТИ</div>
+                    <div class="contacts_text">м. Римская, ул. Международная, 38<br><br>
+
+                        +7 (977) 663-63-97<br><br>
+                        
+                        м. Бауманская, ул. Бакунинская, 14, стр. 10<br><br>
+                        
+                        м. Бауманская, ул. Новорязанская, 31/7, стр. 6<br><br>
+                        
+                        м. Сокол, Ленинградский просп., 78, корп. 3<br><br>
+                        
+                        м. Маяковская, ул. 2-я Тверская-Ямская, 26<br><br>
+                        
+                        м. Бауманская, ул. Спартаковская, 6<br><br>
+                        
+                        +7 (980) 133-00-21 <br><br>
+                        
+                        +7 (916) 408-29-92 <br><br>
+                        
+                        10:00 - 22:00 без выходных</div>
+                </div>
+            </div>
+            
+		</body>
+	</main>
+	<footer class="footer">
+    <div class="footer_container">
+        <div class="footer_menu">
+            <ul class="footer_list">
+                <li class="footer_item"><a href="/masters.html">мастера</a></li>
+                    <li class="footer_item"><a href="/services.html">услуги</a></li>
+                    <li class="footer_item"><a href="/contacts.html">контакты</a></li>
+                <li class="footer_item">телеграм</li>
+                <li class="footer_item">инстаграм</li>
+            </ul>
+        </div>
+        <div class="footer_under">© мнём и тянем, 2022.</div>
+    </div>
+</footer>
+
+	<script src="js/libs.min.js"></script>
+<script src="js/main.min.js"></script>
+
+</body>
+
+</html>

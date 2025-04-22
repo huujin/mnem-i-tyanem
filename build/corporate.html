@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+				content="width=device-width, initial-scale=1.0">
+	<meta name="description"
+				content="Gulp pack for easy html/php markup development">
+	<meta name="keywords"
+				content="">
+	<link rel="shortcut icon"
+				href="img/favicons/favicon.svg"
+				type="image/svg+xml">
+	<link rel="shortcut icon"
+				href="img/favicons/favicon.webp"
+				type="image/webp">
+	<link rel="shortcut icon"
+				href="img/favicons/favicon.png"
+				type="image/x-icon">
+	<link rel="stylesheet"
+				href="css/libs.min.css">
+	<link rel="stylesheet"
+				href="css/style.min.css">
+	<title>Easy-webdev-startpack v3.0</title>
+</head>
+
+
+<body>
+	<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Салон красоты</title>
+    <style>
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #fff;
+            text-decoration: none;
+        }
+        
+        
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 50px;
+        }
+        
+        nav ul li {
+            margin-left: 30px;
+        }
+        
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: 500;
+            font-size: 18px;
+            transition: color 0.3s;
+            position: relative;
+            padding: 5px 0;
+        }
+        
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 24px;
+            cursor: pointer;
+            color: #fff;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header_container">
+            <div class="header-content">               
+                <button class="mobile-menu-btn">☰</button>
+                <nav id="mainNav">
+                    <ul>
+                        <li><a href="/index.html">о нас</a></li>
+                        <li><a href="/services.html">услуги</a></li>
+                        <li><a href="/masters.html">мастера</a></li>
+                        <li style="opacity: 0.7;"><a href="/corporate.html">корпоративным клиентам</a></li>
+                        <li><a href="/contacts.html">контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        
+    </header>
+    
+    <script>
+        // Мобильное меню
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const nav = document.querySelector('nav');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            nav.classList.toggle('active');
+        });
+        
+        // Закрытие меню при клике на ссылку
+        const navLinks = document.querySelectorAll('nav ul li a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                if (nav.classList.contains('active')) {
+                    nav.classList.remove('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+	<main class="main">
+		<body class="zxcqwe">
+			<div class="container">
+                
+                    <div class="corporate">
+                        <div class="corporate_title">Наши сотрудники мнут и тянут клиентов не только в наших студиях</div>
+                        <div class="corporate_info">
+                            Мы можем подобрать специалиста для сопровождения вашего тура или спортивного лагеря, и снабдить его всем необходимым. <br>Отправим массажистов в ваш офис и создадим временную студию в одной из ваших переговорок. Или просто сформируем специальную программу лояльности для сотрудников вашей компании. <br><br> Все подробности по телефону 89164105292
+                        </div>
+                
+                </div>
+                
+            </div>
+			
+			
+		</body>
+	</main>
+<footer class="footer2" >
+    <div class="footer_container" >
+        <div class="footer_menu">
+            <ul class="footer_list">
+                <li class="footer_item"><a href="/masters.html">мастера</a></li>
+                    <li class="footer_item"><a href="/services.html">услуги</a></li>
+                    <li class="footer_item"><a href="/contacts.html">контакты</a></li>
+                <li class="footer_item">телеграм</li>
+                <li class="footer_item">инстаграм</li>
+            </ul>
+        </div>
+        <div class="footer_under">© мнём и тянем, 2022.</div>
+    </div>
+</footer>
+
+	<script src="js/libs.min.js"></script>
+<script src="js/main.min.js"></script>
+
+</body>
+
+</html>

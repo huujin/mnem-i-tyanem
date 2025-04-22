@@ -7,9 +7,18 @@
 
 header {
     background-color: rgba(0, 0, 0, 0);
-    color: #fff;
+    
     position: absolute;
     top: 0;
     z-index: 100;
     width: 100%;
+}
+
+.nav_item {
+    transition: color 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    color: #e9e8e6;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'SoyuzGrotesk';
+    text-transform: uppercase;
 }

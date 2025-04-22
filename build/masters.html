@@ -41,13 +41,12 @@
             text-decoration: none;
         }
         
-        .logo span {
-            color: #ff6b6b;
-        }
+        
         
         nav ul {
             display: flex;
             list-style: none;
+            gap: 50px;
         }
         
         nav ul li {
@@ -58,29 +57,10 @@
             text-decoration: none;
             color: #fff;
             font-weight: 500;
-            font-size: 16px;
+            font-size: 18px;
             transition: color 0.3s;
             position: relative;
             padding: 5px 0;
-        }
-        
-        nav ul li a:hover {
-            color: #ff6b6b;
-        }
-        
-        nav ul li a::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 0;
-            height: 2px;
-            background-color: #ff6b6b;
-            transition: width 0.3s;
-        }
-        
-        nav ul li a:hover::after {
-            width: 100%;
         }
         
         .mobile-menu-btn {
@@ -103,9 +83,9 @@
                     <ul>
                         <li><a href="/index.html">о нас</a></li>
                         <li><a href="/services.html">услуги</a></li>
-                        <li><a href="/masters.html">мастера</a></li>
-                        <li><a href="#services">корпоративным клиентам</a></li>
-                        <li><a href="#contacts">контакты</a></li>
+                        <li style="opacity: 0.7;"><a href="/masters.html">мастера</a></li>
+                        <li><a href="/corporate.html">корпоративным клиентам</a></li>
+                        <li><a href="/contacts.html">контакты</a></li>
                     </ul>
                 </nav>
             </div>
@@ -136,23 +116,18 @@
 </html>
 	<main class="main">
 		<body>
+            <div class="masters_img_head">
+                НАШИ МАСТЕРА
+            </div>
 			<div class="container">
+                
 				<div class="masters">
+                    
 					<ul class="masters_container">
 						<li class="masters_items">
-							<div class="masters_img"><img src="/img/masters1.png" alt="masters1"></div>
+							<div class="masters_img"><img src="/img/masters2.png" alt="masters1"></div>
 							<div class="masters_name">
-								МАША
-							</div>
-							<div class="masters_strip"></div>
-							<div class="masters_desc">
-								Искусствовед и волейболистка. Если не тянет людей, то тренирует женскую команду и занимается армрестлингом. К ней бегите на массаж после тяжёлой тренировки, она вас поймёт как никто.
-							</div>
-						</li>
-						<li class="masters_items">
-							<div class="masters_img"><img src="/img/masters1.png" alt="masters1"></div>
-							<div class="masters_name">
-								МАША
+								КАТЯ
 							</div>
 							<div class="masters_strip"></div>
 							<div class="masters_desc">
@@ -160,9 +135,9 @@
 							</div>
 						</li>
 						<li class="masters_items">
-							<div class="masters_img"><img src="/img/masters1.png" alt="masters1"></div>
+							<div class="masters_img"><img src="/img/masters4.png" alt="masters1"></div>
 							<div class="masters_name">
-								МАША
+								ЕЛЕНА
 							</div>
 							<div class="masters_strip"></div>
 							<div class="masters_desc">
@@ -170,14 +145,47 @@
 							</div>
 						</li>
 						<li class="masters_items">
-							<div class="masters_img"><img src="/img/masters1.png" alt="masters1"></div>
+							<div class="masters_img"><img src="/img/masters5.png" alt="masters1"></div>
 							<div class="masters_name">
-								МАША
+								ЕЛЕНА
 							</div>
 							<div class="masters_strip"></div>
 							<div class="masters_desc">
 								Идеальная классика, ничего лишнего. Детальная консультация и глубокая проработка мышц. Когда не мнет и не тянет, занимается флористикой и ходит в фитнес.
 							</div>
+						</li>
+                        <li class="masters_items">
+							<div class="masters_img"><img src="/img/masters6.png" alt="masters1"></div>
+							<div class="masters_name">
+								МИХАИЛ
+							</div>
+							<div class="masters_strip"></div>
+							<div class="masters_desc">
+                                Мастер массажа с медицинским образованием. Считает, что массаж - это не только профессия, но и искусство, которое он стремится развивать каждый день. Когда он не мнет и не тянет, он путешествует, открывая для себя новые места и культуры.
+                            </div>
+						</li>
+						<li class="masters_items">
+							<div class="masters_img"><img src="/img/masters7.png" alt="masters1"></div>
+							<div class="masters_name">
+								МАРИНА
+							</div>
+							<div class="masters_strip"></div>
+							<div class="masters_desc">
+                                Специалист по эстетической коррекции лица, мастер лимфодринажного массажа. Если чувствуете напряжение после трудовых будней, погрузит вас в релакс на массаже Антистресс. Когда не мнёт и не тянет, ходит в тренажёрный зал, ранее занималась тайским боксом и карате.
+                            </div>
+						</li>
+                        <li class="masters_items">
+							<div class="masters_img"><img src="/img/masters3.jpg" alt="masters1"></div>
+							<div class="masters_name">
+								АНАСТАСИЯ
+							</div>
+							<div class="masters_strip"></div>
+							<div class="masters_desc">
+                                Специалист по коррекции фигуры. <br>
+С помощью антицеллюлитных и лимфодренажных техник, поможет улучшить формы и повысить упругость тела! <br>
+Избавит от боли и нервного напряжения. <br>
+Если не мнёт и не тянет, то рисует картины или танцует бачату!
+                            </div>
 						</li>
 					</ul>
 				</div>
@@ -190,9 +198,9 @@
     <div class="footer_container">
         <div class="footer_menu">
             <ul class="footer_list">
-                <li class="footer_item">мастера</li>
-                <li class="footer_item">услуги</li>
-                <li class="footer_item">контакты</li>
+                <li class="footer_item"><a href="/masters.html">мастера</a></li>
+                    <li class="footer_item"><a href="/services.html">услуги</a></li>
+                    <li class="footer_item"><a href="/contacts.html">контакты</a></li>
                 <li class="footer_item">телеграм</li>
                 <li class="footer_item">инстаграм</li>
             </ul>

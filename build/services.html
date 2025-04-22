@@ -41,13 +41,12 @@
             text-decoration: none;
         }
         
-        .logo span {
-            color: #ff6b6b;
-        }
+        
         
         nav ul {
             display: flex;
             list-style: none;
+            gap: 50px;
         }
         
         nav ul li {
@@ -58,29 +57,10 @@
             text-decoration: none;
             color: #fff;
             font-weight: 500;
-            font-size: 16px;
+            font-size: 18px;
             transition: color 0.3s;
             position: relative;
             padding: 5px 0;
-        }
-        
-        nav ul li a:hover {
-            color: #ff6b6b;
-        }
-        
-        nav ul li a::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 0;
-            height: 2px;
-            background-color: #ff6b6b;
-            transition: width 0.3s;
-        }
-        
-        nav ul li a:hover::after {
-            width: 100%;
         }
         
         .mobile-menu-btn {
@@ -102,10 +82,10 @@
                 <nav id="mainNav">
                     <ul>
                         <li><a href="/index.html">о нас</a></li>
-                        <li><a href="/services.html">услуги</a></li>
+                        <li style="opacity: 0.7;"><a href="/services.html">услуги</a></li>
                         <li><a href="/masters.html">мастера</a></li>
-                        <li><a href="#services">корпоративным клиентам</a></li>
-                        <li><a href="#contacts">контакты</a></li>
+                        <li><a href="/corporate.html">корпоративным клиентам</a></li>
+                        <li><a href="/contacts.html">контакты</a></li>
                     </ul>
                 </nav>
             </div>
@@ -151,49 +131,49 @@
 									<div class="massage_time">30/60/90/120 мин</div>
 									<div class="massage_assist">
 										<div class="massage_name">КЛАССИЧЕСКИЙ</div>
-										<div class="massage_price">от 2200/2900/3800/5300</div>
+										<div class="massage_price">от 2200₽/2900₽/3800₽/5300₽</div>
 									</div>
 								</li>
 								<li class="massage_items">
 									<div class="massage_time">30/60/90/120 мин</div>
 									<div class="massage_assist">
 										<div class="massage_name">СПОРТИВНЫЙ</div>
-										<div class="massage_price">от 2200/2900/3800/5300</div>
+										<div class="massage_price">от 2200₽/2900₽/3800₽/5300₽</div>
 									</div>
 								</li>
 								<li class="massage_items">
 									<div class="massage_time">60/90/120 мин</div>
 									<div class="massage_assist">
 										<div class="massage_name">МАССАЖ У ТОП-МАСТЕРА</div>
-										<div class="massage_price">от 3400₽/4300/6300₽</div>
+										<div class="massage_price">от 3400₽/4300₽/6300₽</div>
 									</div>
 								</li>
 								<li class="massage_items">
 									<div class="massage_time">30/60/90 мин</div>
 									<div class="massage_assist">
 										<div class="massage_name">ЛИМФОДРЕНАЖНЫЙ</div>
-										<div class="massage_price">от 2200/2900/3900</div>
+										<div class="massage_price">от 2200₽/2900₽/3900₽</div>
 									</div>
 								</li>
 								<li class="massage_items">
 									<div class="massage_time">30/60/90 мин</div>
 									<div class="massage_assist">
 										<div class="massage_name">АНТИЦЕЛЛЮЛИТНЫЙ</div>
-										<div class="massage_price">от 2200/2900/3800</div>
+										<div class="massage_price">от 2200₽/2900₽/3800₽</div>
 									</div>
 								</li>
 								<li class="massage_items">
 									<div class="massage_time">45 мин</div>
 									<div class="massage_assist">
 										<div class="massage_name">МЕДОВЫЙ</div>
-										<div class="massage_price">2300</div>
+										<div class="massage_price">2300₽</div>
 									</div>
 								</li>
 								<li class="massage_items">
 									<div class="massage_time">45 мин</div>
 									<div class="massage_assist">
 										<div class="massage_name">АППАРАТНЫЙ</div>
-										<div class="massage_price">3800</div>
+										<div class="massage_price">3800₽</div>
 									</div>
 								</li>
 							</ul>
@@ -207,28 +187,29 @@
 						</div>
 						<ul class="body_massage">
 							<li class="massage_items">
-								<div class="massage_time">30/60/90 мин</div>
+								<div class="massage_time">30 мин</div>
 								<div class="massage_assist">
-									<div class="massage_name">АНТИЦЕЛЛЮЛИТНЫЙ</div>
-									<div class="massage_price">от 2200/2900/3800</div>
+									<div class="massage_name">БУККАЛЬНЫЙ</div>
+									<div class="massage_price">2800₽</div>
+								</div>
+							</li>
+							<li class="massage_items">
+								<div class="massage_time">30 мин</div>
+								<div class="massage_assist">
+									<div class="massage_name">ЛИМФОДРЕНАЖНЫЙ</div>
+									<div class="massage_price">2300₽</div>
 								</div>
 							</li>
 							<li class="massage_items">
 								<div class="massage_time">45 мин</div>
 								<div class="massage_assist">
-									<div class="massage_name">МЕДОВЫЙ</div>
-									<div class="massage_price">2300</div>
-								</div>
-							</li>
-							<li class="massage_items">
-								<div class="massage_time">45 мин</div>
-								<div class="massage_assist">
-									<div class="massage_name">АППАРАТНЫЙ</div>
-									<div class="massage_price">3800</div>
+									<div class="massage_name">БУККАЛЬНЫЙ + ЛИМФОДРЕНАЖНЫЙ</div>
+									<div class="massage_price">3300₽</div>
 								</div>
 							</li>
 						</ul>
 					</div>
+					<a href="https://b866332.yclients.com/select-city/2/select-branch?o="><button class="rounded_btn">ЗАПИСАТЬСЯ</button></a>
 					
 				</div>
 			</div>
@@ -238,9 +219,9 @@
         <div class="footer_container">
             <div class="footer_menu">
                 <ul class="footer_list">
-                    <li class="footer_item">мастера</li>
-                    <li class="footer_item">услуги</li>
-                    <li class="footer_item">контакты</li>
+                    <li class="footer_item"><a href="/masters.html">мастера</a></li>
+                    <li class="footer_item"><a href="/services.html">услуги</a></li>
+                    <li class="footer_item"><a href="/contacts.html">контакты</a></li>
                     <li class="footer_item">телеграм</li>
                     <li class="footer_item">инстаграм</li>
                 </ul>

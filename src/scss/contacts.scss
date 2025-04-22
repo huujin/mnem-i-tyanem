@@ -1,0 +1,29 @@
+.contacts_img {
+    background-image: url("/img/contacts.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 70vh;
+    letter-spacing: .5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    // place-items: center;
+    color: white;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+    font-family: Graphik;
+}
+
+.zxc {
+    width: 40%;
+    left: 30%;
+}
+
+.zxc_logo img {
+    max-width: 600px;
+    padding: 2em;
+}
